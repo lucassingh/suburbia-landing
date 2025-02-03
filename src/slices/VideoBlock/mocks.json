@@ -1,0 +1,20 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"youtubevideo_id": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Commodo Lorem tempor occaecat ea adipisicing quis eiusmod voluptate fugiat. Minim exercitation tempor mollit ut est cupidatat ipsum aliquip excepteur quis ex adipisicing."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]
