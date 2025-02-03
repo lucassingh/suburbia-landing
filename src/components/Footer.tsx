@@ -6,9 +6,7 @@ import { Bounded } from "./Bounded";
 import { FooterPhysics } from "./FooterPhysics";
 import { asImageSrc } from "@prismicio/client";
 
-type Props = {}
-
-export const Footer = async ({ }: Props) => {
+export const Footer = async () => {
 
     const client = createClient();
     const settings = await client.getSingle("settings");

@@ -19,7 +19,6 @@ type GLTFResult = GLTF & {
         Truck1: THREE.Mesh
         Truck2: THREE.Mesh
     }
-    materials: {}
 }
 
 type SkateboardProps = {
@@ -46,7 +45,7 @@ export function Skateboard({
 
     const wheelRef = useRef<THREE.Object3D[]>([])
 
-    const { nodes } = useGLTF('/skateboard.gltf') as GLTFResult
+    const { nodes } = useGLTF('/skateboard.gltf') as unknown as GLTFResult
 
     const wheelTextures = useTexture(wheelTextureURLS)
 
@@ -181,9 +180,9 @@ export function Skateboard({
             rotation: [0, 0, Math.PI / 2],
             position: [0, 0.295, 0]
         }
+        //@typescript-eslint/no-empty-object-type
     }) as const, []
     )
-
 
     return (
         <group dispose={null} rotation={positions[pose].rotation} position={positions[pose].position}>

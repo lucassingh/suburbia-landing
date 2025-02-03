@@ -64,9 +64,10 @@ const ParallaxImage = ({
 
         return () => {
             window.removeEventListener('mousemove', onMouseMove)
+            //@typescript-eslint/no-unused-expressions
             frameId
         }
-    }, [])
+    })
 
     return (
         <div className={clsx('grid grid-cols-1 place-items-center', className)}>
